@@ -1,17 +1,16 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scripts/MenuScene.gd" type="Script" id=1]
-[ext_resource path="res://sprites/BackGroundBlue.png" type="Texture" id=2]
+[ext_resource path="res://sprites/BackgroundBlue.png" type="Texture" id=2]
 [ext_resource path="res://fonts/Symtext.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://scripts/ColorElement.gd" type="Script" id=4]
 [ext_resource path="res://sprites/BackgroundGray.png" type="Texture" id=5]
 [ext_resource path="res://sprites/BackgroundRed.png" type="Texture" id=6]
 [ext_resource path="res://sprites/BackgroundPink.png" type="Texture" id=7]
-[ext_resource path="res://sprites/BackgroundBlue.png" type="Texture" id=8]
-[ext_resource path="res://sprites/BackgroundOrange.png" type="Texture" id=9]
-[ext_resource path="res://sprites/BackgroundDarkGreen.png" type="Texture" id=10]
-[ext_resource path="res://sprites/BackgroundBlack.png" type="Texture" id=11]
-[ext_resource path="res://sprites/BackgroundPurple.png" type="Texture" id=12]
+[ext_resource path="res://sprites/BackgroundOrange.png" type="Texture" id=8]
+[ext_resource path="res://sprites/BackgroundDarkGreen.png" type="Texture" id=9]
+[ext_resource path="res://sprites/BackgroundBlack.png" type="Texture" id=10]
+[ext_resource path="res://sprites/BackgroundPurple.png" type="Texture" id=11]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -292,7 +291,7 @@ shape = SubResource( 4 )
 [node name="Sprite" type="Sprite" parent="BlueElement" index="1"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 8 )
+texture = ExtResource( 2 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="OrangeElement" type="Area2D" parent="." index="10"]
@@ -316,7 +315,7 @@ shape = SubResource( 4 )
 [node name="Sprite" type="Sprite" parent="OrangeElement" index="1"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 9 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="DarkGreenElement" type="Area2D" parent="." index="11"]
@@ -340,7 +339,7 @@ shape = SubResource( 4 )
 [node name="Sprite" type="Sprite" parent="DarkGreenElement" index="1"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 10 )
+texture = ExtResource( 9 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="BlacKElement" type="Area2D" parent="." index="12"]
@@ -364,7 +363,7 @@ shape = SubResource( 4 )
 [node name="Sprite" type="Sprite" parent="BlacKElement" index="1"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 11 )
+texture = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="PurpleElement" type="Area2D" parent="." index="13"]
@@ -388,7 +387,7 @@ shape = SubResource( 4 )
 [node name="Sprite" type="Sprite" parent="PurpleElement" index="1"]
 
 scale = Vector2( 2, 2 )
-texture = ExtResource( 12 )
+texture = ExtResource( 11 )
 _sections_unfolded = [ "Transform" ]
 
 [connection signal="button_down" from="QuitButton" to="." method="_on_QuitButton_button_down"]
