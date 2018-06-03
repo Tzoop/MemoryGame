@@ -1,0 +1,791 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://scripts/GameManager.gd" type="Script" id=1]
+[ext_resource path="res://scripts/Card.gd" type="Script" id=2]
+[ext_resource path="res://sprites/dandelion-flower.png" type="Texture" id=3]
+[ext_resource path="res://fonts/Symtext.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://scripts/CardOneName.gd" type="Script" id=5]
+[ext_resource path="res://scripts/CardTwoName.gd" type="Script" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 251.689, 250.482 )
+
+[sub_resource type="DynamicFont" id=2]
+
+size = 27
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 27
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 4 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="GameManger" type="Node2D" index="0"]
+
+position = Vector2( 90, 0 )
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card1" type="Area2D" parent="." index="0"]
+
+editor/display_folded = true
+position = Vector2( 960, 180 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card1" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card1" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card17" type="Area2D" parent="." index="1"]
+
+editor/display_folded = true
+position = Vector2( 1140, 180 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card17" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card17" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card9" type="Area2D" parent="." index="2"]
+
+editor/display_folded = true
+position = Vector2( 600, 180 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card9" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card9" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card5" type="Area2D" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 780, 180 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card5" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card5" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card24" type="Area2D" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( 1320, 180 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card24" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card24" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card16" type="Area2D" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 420, 180 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card16" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card16" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card2" type="Area2D" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 960, 360 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card2" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card2" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card18" type="Area2D" parent="." index="7"]
+
+editor/display_folded = true
+position = Vector2( 1140, 360 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card18" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card18" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card10" type="Area2D" parent="." index="8"]
+
+editor/display_folded = true
+position = Vector2( 600, 360 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card10" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card10" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card6" type="Area2D" parent="." index="9"]
+
+editor/display_folded = true
+position = Vector2( 780, 360 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card6" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card6" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card23" type="Area2D" parent="." index="10"]
+
+editor/display_folded = true
+position = Vector2( 1320, 360 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card23" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card23" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card15" type="Area2D" parent="." index="11"]
+
+editor/display_folded = true
+position = Vector2( 420, 360 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card15" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card15" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card3" type="Area2D" parent="." index="12"]
+
+editor/display_folded = true
+position = Vector2( 960, 540 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card3" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card3" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card19" type="Area2D" parent="." index="13"]
+
+editor/display_folded = true
+position = Vector2( 1140, 540 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card19" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card19" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card11" type="Area2D" parent="." index="14"]
+
+editor/display_folded = true
+position = Vector2( 600, 540 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card11" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card11" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card7" type="Area2D" parent="." index="15"]
+
+editor/display_folded = true
+position = Vector2( 780, 540 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card7" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card7" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card21" type="Area2D" parent="." index="16"]
+
+editor/display_folded = true
+position = Vector2( 1320, 540 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card21" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card21" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card13" type="Area2D" parent="." index="17"]
+
+editor/display_folded = true
+position = Vector2( 420, 540 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card13" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card13" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card4" type="Area2D" parent="." index="18"]
+
+editor/display_folded = true
+position = Vector2( 960, 720 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card4" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card4" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card20" type="Area2D" parent="." index="19"]
+
+editor/display_folded = true
+position = Vector2( 1140, 720 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card20" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card20" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card12" type="Area2D" parent="." index="20"]
+
+editor/display_folded = true
+position = Vector2( 600, 720 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card12" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card12" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card8" type="Area2D" parent="." index="21"]
+
+editor/display_folded = true
+position = Vector2( 780, 720 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card8" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card8" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card22" type="Area2D" parent="." index="22"]
+
+editor/display_folded = true
+position = Vector2( 1320, 720 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card22" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card22" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Card14" type="Area2D" parent="." index="23"]
+
+editor/display_folded = true
+position = Vector2( 420, 720 )
+scale = Vector2( 0.3, 0.3 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Sprite" type="Sprite" parent="Card14" index="0"]
+
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Card14" index="1"]
+
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CardOneName" type="RichTextLabel" parent="." index="24"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 880.0
+margin_right = 620.0
+margin_bottom = 938.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Card 1 : Name"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+script = ExtResource( 5 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_fonts" ]
+
+[node name="CardTwoName" type="RichTextLabel" parent="." index="25"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1040.0
+margin_top = 880.0
+margin_right = 1340.0
+margin_bottom = 938.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Card 1 : Name"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+script = ExtResource( 6 )
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_fonts" ]
+
+[node name="CheckBox" type="RichTextLabel" parent="." index="26"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 940.0
+margin_top = 880.0
+margin_right = 986.0
+margin_bottom = 938.0
+rect_scale = Vector2( 2, 2 )
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "?"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_fonts" ]
+
+[node name="NumberOfMatches" type="RichTextLabel" parent="." index="27"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 320.0
+margin_top = 1000.0
+margin_right = 745.0
+margin_bottom = 1058.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/normal_font = SubResource( 2 )
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = "Number of Matches: 0"
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect", "custom_fonts" ]
+
+[node name="BackToMenuButton" type="Button" parent="." index="28"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 5.0
+margin_top = 911.0
+margin_right = 249.0
+margin_bottom = 1011.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = SubResource( 3 )
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Back to Menu"
+flat = false
+align = 1
+_sections_unfolded = [ "Anchor", "Material", "Rect", "Theme", "custom_fonts" ]
+
+[connection signal="button_down" from="BackToMenuButton" to="." method="_on_BackToMenuButton_button_down"]
+
+

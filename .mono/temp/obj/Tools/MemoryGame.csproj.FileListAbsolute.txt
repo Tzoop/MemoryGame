@@ -1,0 +1,6 @@
+D:\GodotProjects\MemoryGame\.mono\temp\obj\Tools\MemoryGame.csprojResolveAssemblyReference.cache
+D:\GodotProjects\MemoryGame\.mono\temp\obj\Tools\MemoryGame.csproj.CoreCompileInputs.cache
+D:\GodotProjects\MemoryGame\.mono\temp\bin\Tools\MemoryGame.dll
+D:\GodotProjects\MemoryGame\.mono\temp\bin\Tools\MemoryGame.pdb
+D:\GodotProjects\MemoryGame\.mono\temp\obj\Tools\MemoryGame.dll
+D:\GodotProjects\MemoryGame\.mono\temp\obj\Tools\MemoryGame.pdb
