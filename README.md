@@ -9,6 +9,10 @@ A memory game (finding pairs of cards)
 
 - [Memory Game on itch.io](https://tzoop.itch.io/memory-game) Here this game can be played and downloaded. 
 
+![Screenshot Menu](https://github.com/Tzoop/MemoryGame/blob/master/screenshots_for_readme_github/MemoryGameMenuScreenshot.png)
+
+![Screenshot Game](https://github.com/Tzoop/MemoryGame/blob/master/screenshots_for_readme_github/MemoryGamePlayingScreenshot1.png)
+
 
 # License
 
