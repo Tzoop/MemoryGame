@@ -7,7 +7,7 @@ A memory game (finding pairs of cards)
 
 - The scripts are written in gdscript
 
-- [Memory Game on itch.io](https://tzoop.itch.io/memory-game) Here this game can be played and downloaded. 
+- [Memory Game on itch.io](https://tzoop.itch.io/memory-game) <- Here this game can be played and downloaded. 
 
 ![Screenshot Menu](https://github.com/Tzoop/MemoryGame/blob/master/screenshots_for_readme_github/MemoryGameMenuScreenshot.png)
 
