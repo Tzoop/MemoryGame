@@ -1,12 +1,17 @@
-# MemoryGame
+# Memory Game
 
 
-classical memory game (find pairs of cards)
+A memory game (finding pairs of cards)
 
-memory game made with godot (v3)
+- This is made using Godot Engine 3
 
-scripts are written in gdscript
+- The scripts are written in gdscript
 
-this projects license is CCO (Creative Commons 1.0 Universal)
+- [Memory Game on itch.io](https://tzoop.itch.io/memory-game) Here this game can be played and downloaded. 
 
-the used icons are licensed CC BY 3.0
+
+# License
+
+- CCO (Creative Commons 1.0 Universal)
+
+- Icons used are licensed CC BY 3.0 and can be found here: [Game-Icons](https://game-icons.net/)
