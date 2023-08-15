@@ -5,6 +5,8 @@ A memory game (finding pairs of cards)
 
 - This is made using Godot Engine 3
 
+- here is the same game but Godot Engine 4 files (made with version 4.1.1.stable.official): https://github.com/Tzoop/Memory-Game-Godot-version-4.1.1.-
+
 - The scripts are written in gdscript
 
 - [Memory Game on itch.io](https://tzoop.itch.io/memory-game) <- Here this game can be played and downloaded. 
